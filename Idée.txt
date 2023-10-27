@@ -1,0 +1,68 @@
+1- categoriser les crimes
+2- choix du crimes, choix de l'année : affiche une carte (e) (k)
+4- choix crimes : evolution en fonction du temps (a)
+5- choix années : categoriser les crimes (b), nombre de chaque crimes (j), cartes representant le crime le plus coourrant par departement (c)
+6- stats (d)(f)(i)(l)
+7- comparaison police/gendarme (g)
+
+streamlit
+folium
+streamlit_folium
+pandas
+geopandas==0.9.0
+matplotlib.pyplot
+plotly.graph_objects
+
+
+a.Graphique de ligne temporelle :
+
+Visualisez l'évolution du nombre total de crimes au fil des années.
+
+b.Graphique de barres empilées :
+
+Montrez la répartition des différents types de crimes par année. Chaque année aura des barres empilées représentant les différents types de crimes.
+
+c.Carte choroplèthe :
+
+Affichez une carte de la France en utilisant la bibliothèque Folium ou Plotly. Utilisez une échelle de couleurs pour représenter le niveau de criminalité par département. Plus sombre peut signifier plus de crimes.
+
+d.Graphique de barres horizontales :
+
+Identifiez les départements les plus dangereux en affichant les dix départements avec le nombre de crimes le plus élevé pour une année donnée.
+
+e.Graphique en barres empilées (types de crimes par département) :
+
+Permettez aux utilisateurs de sélectionner un département spécifique et affichez un graphique empilé montrant la répartition des types de crimes pour ce département au fil des années.
+
+f.Heatmap :
+
+Montrez une heatmap qui met en évidence les années et les départements où la criminalité a augmenté ou diminué de manière significative.
+
+g.Graphique à barres empilées (comparaison des forces de l'ordre) :
+
+Comparez le nombre de crimes entre la police et la gendarmerie pour une année donnée.
+
+h.Graphique de dispersion (répartition géographique des crimes) :
+
+Affichez un nuage de points pour représenter la répartition géographique des crimes dans un département spécifique pour une année donnée.
+
+i.Graphique en secteurs (part de chaque type de crime dans le total annuel) :
+
+Montrez la part de chaque type de crime dans le total annuel pour une année donnée.
+
+j.Graphique de densité :
+
+Utilisez un graphique de densité pour afficher la distribution des types de crimes sur une période de plusieurs années.
+
+k.Tableau de données interactif :
+
+Créez un tableau interactif qui permet aux utilisateurs de rechercher et trier les données par département, année, ou type de crime.
+
+l.Graphique en radar (comparaison départementale) :
+
+Comparez les différents départements en utilisant un graphique en radar, en mettant en évidence les départements avec les taux de criminalité les plus élevés ou les plus bas.
+
+
+
+Fait : 
+- plot evolution nb crime au cours du temsp

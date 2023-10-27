@@ -256,7 +256,7 @@ def main():
     st.sidebar.markdown(f'<a href="{linkedin_url}" target="_blank" rel="noopener noreferrer">{linkedin_icon} LinkedIn</a>', unsafe_allow_html=True)
 
     # Lien vers votre profil GitHub avec une icône
-    github_url = "Lien_vers_votre_profil_GitHub"
+    github_url = "https://github.com/loanerabillard/Data-Visualization.git"
     github_icon = '<i class="fab fa-github"></i>'
     st.sidebar.markdown(f'<a href="{github_url}" target="_blank" rel="noopener noreferrer">{github_icon} GitHub</a>', unsafe_allow_html=True)
 
