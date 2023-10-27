@@ -9,3 +9,7 @@ seaborn==0.11.2
 streamlit==1.3.0
 streamlit_folium==0.6.0
 click==7.1.2
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0974cbef7697d1cbe33db574a1f546eb6b9dd9c4
