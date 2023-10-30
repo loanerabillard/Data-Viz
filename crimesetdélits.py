@@ -251,7 +251,7 @@ def main():
 
     
     # Lien vers votre profil LinkedIn avec une icône
-    linkedin_url = "www.linkedin.com/in/loane-rabillard-02517a1b7"
+    linkedin_url = "https://www.linkedin.com/in/loane-rabillard-02517a1b7/"
     linkedin_icon = '<i class="fab fa-linkedin"></i>'
     st.sidebar.markdown(f'<a href="{linkedin_url}" target="_blank" rel="noopener noreferrer">{linkedin_icon} LinkedIn</a>', unsafe_allow_html=True)
 
