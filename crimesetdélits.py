@@ -57,7 +57,7 @@ def display_crimes_by_year_line_chart(df, selected_infractions):
 
     if not filtered_data.empty:
         data_by_year = filtered_data.groupby(['annee', 'classe'])['faits'].sum().unstack()
-        data_by_year.index = ["20{:02d}".format(year) for year in data_by_year.index]
+        data_by_year.index = ["20{:02d}".format(int(year)) for year in data_by_year.index]
         st.line_chart(data_by_year, use_container_width=True)
     else:
         st.write("Aucune donnée disponible pour les infractions sélectionnées.")
@@ -274,7 +274,8 @@ def main():
             display_crimes_by_year_line_chart(df, selected_infractions)
             display_crimes_by_department_altair_chart(df, selected_infractions)
         
-        df['annee'] = pd.to_datetime(df['annee'], format='%y').dt.strftime('20%y')
+        #df['annee'] = pd.to_datetime(df['annee']==year)
+
 
         selected_years = st.multiselect('Sélectionnez une année :', df['annee'].unique())
 
@@ -297,7 +298,7 @@ def main():
 
         st.title("Répartition des Faits par Classe")
 
-        df['annee'] = pd.to_datetime(df['annee'], format='%y').dt.strftime('20%y')
+        #df['annee'] = pd.to_datetime(df['annee'], format='%y').dt.strftime('20%y')
 
         selected_year = st.selectbox("Sélectionnez une année", df['annee'].unique())
 
@@ -337,7 +338,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-

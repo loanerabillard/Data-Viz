@@ -6,6 +6,7 @@ import geopandas as gpd
 @st.cache
 def load_data():
     df = pd.read_csv('donnee-dep-data.gouv-2022-geographie2023-produit-le2023-07-17.csv', delimiter=';')
+    #df['annee'] = df['annee'].astype(str)
     return df
 
 @st.cache
